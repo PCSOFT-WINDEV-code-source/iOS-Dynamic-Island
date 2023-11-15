@@ -1,0 +1,106 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : iOS Dynamic Island
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Application iOS
+    internal_properties : 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
+    configuration_id : 12561609700984409722
+    type : 18
+    version : {}
+    language : 1
+ elements :
+  identifier : 0x4357a375000ee78d
+  elements :
+   -
+     name : FEN_Détails
+     identifier : 0x4384bb280aa8c9c0
+     internal_properties : CAAAAAgAAABMyqTwT3Q8b3vu2abRWm5LAEEPV+0lkhd2CXtZ/Bf9AwUN98LhYdc8SP/5x0+BeW9Z2Q==
+     physical_name : .\FEN_Détails.wdw
+     type : 2
+   -
+     name : ProcéduresGlobales
+     identifier : 0x4357d40904d7a79a
+     internal_properties : CAAAAAgAAAApK4eDXGlpHsaOhcSBqhX6wfCRvVfdDo1tOdgyyGdd4qhC1Nn65pMa9MwXoINn0Dss
+     physical_name : .\ProcéduresGlobales.wdg
+     type : 7
+   -
+     name : DynamicIsland
+     identifier : 0x43580249004654b7
+     internal_properties : CAAAAAgAAADzTyt/zLnxKjT/5SASM15/QyZyqiKbMraiBmPn7SbszDCcGbuYoEmNVcw2ggL++u7WXg==
+     physical_name : .\DynamicIsland.wdg
+     type : 7
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ data_directory : <RepExeOuRepDonneesCommun>
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ wb_style_sheet : .\WM TAMES Eoliennes.wws
+ code_elements :
+  internal_properties : CAAAAAgAAABseimUYz4VdXZ8hGsGFqoxLDfDcHkNZdBf0iQg2FQcqmw5VrO2lryVMt3efm9RagPlXJBReauIsX3ZdB8=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      CONSTANT
+      	CST_ETAT_ATTENTE = 0
+      	CST_ETAT_ENCOURS = 1
+      	CST_ETAT_TERMINE = 2	
+      FIN
+      
+      // URI récupérée via Dynamic Island
+      gURI est chaine
+      
+      
+      iOSApplicationOpenURLProcédure(callBackDynamicIsland)
+      
+      
+      
+      	PROCÉDURE INTERNE callBackDynamicIsland(u est une URI <utile>)
+      		
+      		// Récupère l'URI afin d'effectuer l'action correspondante au clic sur le bouton de Dynamic Island
+      		guri = u
+      		
+      		// Affiche la fenêtre si elle ne l'est pas déjà
+      		si fenetat("FEN_Détails") = Inexistant ALORS
+      			OuvreFenêtreMobile(FEN_Détails)
+      		FIN
+      		
+      	FIN
+     type : 196608
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Application iOS
+     identifier : 0x4357a375000fe78d
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

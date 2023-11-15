@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 20" style="enable-background:new 0 0 120 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#CCCCCC;}
+	.st2{opacity:0.25;}
+	.st3{fill:#065FD4;}
+</style>
+<g>
+	<rect x="0.5" y="0.5" class="st0" width="23" height="19"/>
+	<path class="st1" d="M23,1v18H1V1H23 M24,0H0v20h24V0L24,0z"/>
+</g>
+<g class="st2">
+	<rect x="48.5" y="0.5" class="st0" width="23" height="19"/>
+	<path class="st1" d="M71,1v18H49V1H71 M72,0H48v20h24V0L72,0z"/>
+</g>
+<g>
+	<rect x="24.5" y="0.5" class="st0" width="23" height="19"/>
+	<path class="st3" d="M47,1v18H25V1H47 M48,0H24v20h24V0L48,0z"/>
+</g>
+<g>
+	<rect x="72.5" y="0.5" class="st0" width="23" height="19"/>
+	<path class="st3" d="M95,1v18H73V1H95 M96,0H72v20h24V0L96,0z"/>
+</g>
+<g>
+	<rect x="96.5" y="0.5" class="st0" width="23" height="19"/>
+	<g>
+		<path class="st3" d="M119,1v18H97V1H119 M120,0H96v20h24V0L120,0z"/>
+	</g>
+</g>
+</svg>

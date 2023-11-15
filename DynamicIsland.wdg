@@ -1,0 +1,106 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : DynamicIsland
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x13580249001654b7
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : actualiserIntervention
+     procedure_id : 1393866640178247928
+     type_code : 15
+     code : |1-
+      func actualiserIntervention (intervenant: String) {
+      	if #available(iOS 16.1, *) {
+      		Task {
+      		    let updatedInterventionStatus = InterventionAttributes.InterventionStatus(IntervenantName: intervenant, estimatedInterventionTime: Date()...Date().addingTimeInterval(60 * 60))
+      		    
+      		    for activity in Activity<InterventionAttributes>.activities{
+      		        await activity.update(using: updatedInterventionStatus)
+      		    }
+      		}
+      	}
+      }
+     language : Swift
+     type : 458752
+   -
+     name : commencerIntervention
+     procedure_id : 1393866640178313480
+     type_code : 15
+     code : |1+
+      import ActivityKit
+       
+      func commencerIntervention(intervenant: String) -> (resultat: Bool, errorMessage: String)
+      {
+      	if #available(iOS 16.1, *) {
+      		let interventionAttributes = InterventionAttributes()
+      	    let initialContentState = InterventionAttributes.InterventionStatus(IntervenantName: intervenant, estimatedInterventionTime: Date()...Date().addingTimeInterval(15 * 60))
+      	                                                  
+      	    do {
+      	    		let _ =	try Activity<InterventionAttributes>.request(
+      	                attributes: interventionAttributes,
+      	                contentState: initialContentState,
+      	                pushType: nil)
+      	        return (true,"")
+      	    } catch (let error) {	        
+      	        return (false,error.localizedDescription)
+      	    }
+      	}
+      	return (false, "ios 16.1 minimum")
+      }
+     language : Swift
+     type : 458752
+   -
+     name : listeIntervention
+     procedure_id : 1393866640178379016
+     type_code : 15
+     code : |1-
+      func listeIntervention() -> String {
+      	var result = ""
+      	if #available(iOS 16.1, *) {
+      		for activity in Activity<InterventionAttributes>.activities {
+      		    result += "Intervention delivery details: \(activity.id) -> \(activity.attributes)\n"
+      		}
+      	}
+      	return result
+      }
+     language : Swift
+     type : 458752
+   -
+     name : stopIntervention
+     procedure_id : 1393866640178444552
+     type_code : 15
+     code : |1-
+      	func stopIntervention() 
+      {
+      	if #available(iOS 16.1, *) {
+      	    Task {
+      	    	for activity in Activity<InterventionAttributes>.activities{
+      				await activity.end(dismissalPolicy: .immediate)
+      			}
+      		}
+      	}
+      }
+        
+     language : Swift
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x13580245001442f4
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
